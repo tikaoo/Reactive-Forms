@@ -1,0 +1,67 @@
+<div mat-dialog-content >
+    <h1 mat-dialog-title>Olá, Fututo melhor amigo! </h1>
+    <div>
+        <form  action="#" class="form"   [formGroup]="form">
+            <mat-form-field class="fomr1"  appearance="outline">
+                <mat-label>Nome</mat-label>
+                <input type="text"  matInput formControlName="name" name="name" >
+              </mat-form-field>
+
+              <mat-form-field class="fomr1"  appearance="outline">
+                <mat-label>Sobrenome</mat-label>
+                <input type="text"  matInput formControlName="sobreNome" name="sobrenome">
+              </mat-form-field>
+    
+              <mat-form-field class="fomr1"  appearance="outline">
+                <mat-label>Usuário</mat-label>
+                <input type="text"   matInput formControlName="userName" name="Usuário">
+              </mat-form-field>
+    
+              <mat-form-field class="fomr1"  appearance="outline">
+                <mat-label>CPF</mat-label>
+                <input type="text" matInput formControlName="cpf" name="cpf">
+              </mat-form-field>
+              
+              
+               <mat-form-field class="fomr1"  appearance="outline">
+                 
+                <mat-label>Telefone</mat-label>
+                <input type="tel" 
+                matInput 
+                formControlName="telefone" 
+                name="tel"
+                >
+                
+                
+              </mat-form-field>
+            
+    
+              <mat-form-field class="fomr1"  appearance="outline">
+                <mat-label>Endereço</mat-label>
+                <input type="text"   matInput formControlName="endereço" name="endereço">
+              </mat-form-field>
+    
+              <mat-form-field class="fomr1"  appearance="outline">
+                <mat-label>Complemento</mat-label>
+                <input type="text"   matInput formControlName="complemento" name="complemento">
+              </mat-form-field>
+    
+              <mat-form-field class="fomr1"  appearance="outline">
+                <mat-label>Senha</mat-label>
+                <input type="password"   matInput formControlName="senha1" name="senha1">
+              </mat-form-field>
+    
+              <mat-form-field class="fomr1"  appearance="outline">
+                <mat-label>Confirme sua senha</mat-label>
+                <input 
+                type="password"   matInput formControlName="senha2" name="senha2"
+                >
+              </mat-form-field>
+             
+        </form>
+    </div>    
+    </div>
+    <div mat-dialog-actions>      
+       <button mat-button (click)="cancel()">Fechar</button>
+       <button mat-raised-button color='primary' (click)="add()" >Adicionar</button>
+    </div>

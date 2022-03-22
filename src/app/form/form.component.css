@@ -1,0 +1,19 @@
+.form{
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.form1{
+    width: 100%;
+}
+.end{
+    height: 15px;
+    width: 15px;
+    
+}
+mat-form-field{
+    width: 100%;
+}
+.mat-dialog-title{
+    text-align: center;
+}
